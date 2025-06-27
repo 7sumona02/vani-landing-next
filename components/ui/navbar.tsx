@@ -11,7 +11,7 @@ const Navbar1 = () => {
   const toggleMenu = () => setIsOpen(!isOpen)
 
   return (
-    <div className="flex justify-center w-screen py-6 px-4 fixed top-0.5 z-50">
+    <div className="flex justify-center w-screen py-6 px-4 fixed top-0.5 z-999">
       <div className="flex items-center justify-between px-6 py-3 border border-white/30 bg-white/20 backdrop-blur-lg transition-all rounded-full shadow-lg md:w-5xl w-lg relative z-10">
         <div className="flex items-center">
           <motion.div
