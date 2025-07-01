@@ -92,7 +92,7 @@ export default function AudioPlayer({ audioSrc, title }) {
   };
 
   return (
-    <div className="audio-player rounded-lg w-3xl pt-12 pb-10">
+    <div className="audio-player rounded-lg w-3xl pt-12 pb-6">
       {/* Hidden audio element */}
       <audio ref={audioRef} src={audioSrc} preload="metadata" />
       
