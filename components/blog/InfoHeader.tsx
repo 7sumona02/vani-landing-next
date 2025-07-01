@@ -3,7 +3,7 @@ import React from 'react'
 
 const InfoHeader = ({ imgUrl, author, date, time }: { imgUrl: string, author: string, date: string, time: number }) => {
   return (
-    <div className='flex gap-8 text-sm'>
+    <div className='flex md:gap-8 gap-6 text-sm'>
         <div className='flex items-center gap-2'>
             <div className='p-2 bg-black rounded-full'>
                 {/* <img src={imgUrl} className='size-7 rounded-full' alt='profile' /> */}
