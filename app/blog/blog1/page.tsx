@@ -10,7 +10,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='min-h-screen -translate-y-16'>
+    <div className='min-h-screen -translate-y-16 pb-40'>
         <div className='container max-w-3xl mx-auto '>
             <Tag tag="Technology" />
             <Title title="Idea to Audio in Under 10 Seconds: How Vaanika Crushes Creative Friction" />
@@ -39,7 +39,7 @@ Our purpose with Vaanika is clear: to be the most efficient tool for producing p
 Ready to experience the freedom of instant audio creation and revolutionize your content pipeline ? Discover why vaanika is quickly becoming the best text to speech software in the world for all your digital content creation needs.
 Try Vaanika for Free Today!' />
             <Quote quote='Vaanika: Idea to Audio. Instantly.' className='mt-2 mb-12' />
-            <img src='/b1table.svg' className='w-3xl pt-4 pb-40' />
+            <img src='/b1table.svg' className='w-3xl pt-4' />
         </div>
     </div>
   )
