@@ -10,8 +10,8 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='min-h-screen -translate-y-16 pb-40'>
-        <div className='container max-w-3xl mx-auto '>
+    <div className='min-h-screen -translate-y-16 md:px-0 px-4 md:pt-0 pt-20 pb-40'>
+        <div className='container md:max-w-3xl w-full mx-auto '>
             <Tag tag="Technology" />
             <Title title="Why Vaanika is My Go-To for Seamless AI Voice Cloning" />
             <InfoHeader imgUrl="/pfp.jpg" author="VoidException" date="30 June 2025" time={3} />
