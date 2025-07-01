@@ -14,14 +14,14 @@ const Benefit = ({ text, checked }: BenefitProps) => {
     <div className="flex items-center gap-3">
       {checked ? (
         <span className="grid size-4 place-content-center rounded-full bg-primary border text-sm border-[#e9e9e9]/60">
-          <Check className="size-3 text-[#e9e9e9]/60" />
+          <Check className="size-3 text-[#e9e9e9]" />
         </span>
       ) : (
         <span className="grid size-4 place-content-center rounded-full dark:bg-zinc-800 bg-zinc-200 text-sm dark:text-zinc-400 text-zinc-600">
           <X className="size-3" />
         </span>
       )}
-      <span className="text-sm text-[#e9e9e9]/60">{text}</span>
+      <span className="text-sm text-[#e9e9e9]">{text}</span>
     </div>
   )
 }
@@ -51,19 +51,26 @@ export const PricingCard = ({
     >
       <Card
         className={cn(
-          "relative h-full w-[17rem] overflow-hidden border",
-          "dark:border-zinc-700 dark:bg-gradient-to-br dark:from-zinc-950/50 dark:to-zinc-900/80",
-          "border-white/30 bg-gradient-to-br from-black/80 to-neutral-800",
+          "relative h-full md:w-[360px] w-[320px] overflow-hidden border",
+          "border-white/20 bg-gradient-to-br from-black/80 to-neutral-800",
           "p-6",
           className,
         )}
       >
-        <div className="flex flex-col items-start border-b pb-6 dark:border-zinc-700 border-zinc-200 text-[#e9e9e9]">
-          <span className="mb-6 inline-block dark:text-zinc-50">
+        <div className="flex flex-col items-start pb-4 border-b border-white/30 text-[#e9e9e9]">
+          <span className="mb-4 text-lg font-semibold dark:text-zinc-50 flex flex-col-reverse items-start gap-3">
             {tier}
+            {tier === "Pro Tier" && (
+              <img 
+                src="/pro.svg" // Update this path
+                alt="Pro badge"
+                className="inline-block"
+              />
+            )}
           </span>
-          <span className="mb-3 inline-block text-3xl font-medium">
+          <span className="mb-3 inline-block text-4xl font-medium">
             {price}
+            <span className="text-lg ml-1 text-[#e9e9e9]/70">/month</span>
           </span>
           <span className="dark:bg-gradient-to-br dark:from-zinc-200 dark:to-zinc-500 bg-gradient-to-br from-white/50 to-neutral-400 bg-clip-text text-transparent">
             {bestFor}
@@ -79,7 +86,7 @@ export const PricingCard = ({
         </div>
         <Button
           className="w-full"
-          variant={tier === "Pro" ? "pro" : "default"}
+          variant={tier === "Pro Tier" ? "pro" : "default"}
         >
           {CTA}
         </Button>

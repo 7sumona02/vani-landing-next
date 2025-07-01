@@ -6,7 +6,7 @@ import { TextHoverEffect } from "./text-hover-effect"
 const Footer = () => {
   return (
     <div className='h-fit w-screen bg-black pt-20 relative'>
-        <div className='container max-w-6xl mx-auto text-white/60 border-t border-white/30 bg-white/10 backdrop-blur-sm rounded-t-2xl px-20 pt-14 pb-6 z-50 relative'>
+        <div className='container max-w-6xl mx-auto text-white/60 border-t border-white/30 bg-white/10 backdrop-blur-sm rounded-t-2xl md:px-20 px-10 pt-14 pb-6 z-50 relative'>
             <div className='flex md:flex-row flex-col justify-between items-start pb-40'>
                 <div className='flex md:pb-0 pb-10'>
                     <Instagram className='text-white/40 w-10' />
@@ -37,11 +37,11 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex md:flex-row flex-col md:gap-0 gap-5 justify-between items-center'>
-                <div className='flex items-center gap-2'>
-                    <div>Privacy Policy</div>
+            <div className='flex md:flex-row flex-col md:gap-0 gap-5 justify-between'>
+                <div className='flex items-center'>
+                    <span>Privacy Policy</span>
                     <span>•</span>
-                    <div>Terms & Conditions</div>
+                    <span>Terms & Conditions</span>
                 </div>
                 <div>FuturixAI & Quantum Works. All Rights Reserved</div>
             </div>   

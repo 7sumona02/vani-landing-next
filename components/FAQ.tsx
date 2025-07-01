@@ -39,14 +39,14 @@ const faqData = [
 
 export function FAQ() {
   return (
-    <div className='h-fit w-full bg-black pt-20 pb-10 relative'>
-      <div className='container max-w-5xl mx-auto text-white/60 pt-14 pb-6 relative flex flex-col gap-4'>
-        <div className='font-bold pb-12 leading-[5rem] text-5xl bg-clip-text text-transparent bg-gradient-to-br from-white to-gray-500 tracking-wide'>
+    <div className='h-fit w-full bg-black pt-10 pb-10 relative'>
+      <div className='container max-w-6xl mx-auto text-white/60 pt-14 pb-6 relative flex flex-col gap-4'>
+        <div className='font-bold pb-12 leading-[5rem] text-6xl bg-clip-text text-transparent bg-gradient-to-br from-white to-gray-500 tracking-wide'>
           Frequently Asked Questions
         </div>
 
         <Accordion
-          className="md:w-4xl w-fit"
+          className="md:w-6xl w-fit"
           type="single"
           defaultValue={`item-0`}
           collapsible
